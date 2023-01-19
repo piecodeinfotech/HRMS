@@ -1,0 +1,12 @@
+F:\GIThub\HRMS\HRMS.Model\bin\Debug\net6.0\HRMS.Model.deps.json
+F:\GIThub\HRMS\HRMS.Model\bin\Debug\net6.0\HRMS.Model.dll
+F:\GIThub\HRMS\HRMS.Model\bin\Debug\net6.0\HRMS.Model.pdb
+F:\GIThub\HRMS\HRMS.Model\obj\Debug\net6.0\HRMS.Model.csproj.AssemblyReference.cache
+F:\GIThub\HRMS\HRMS.Model\obj\Debug\net6.0\HRMS.Model.GeneratedMSBuildEditorConfig.editorconfig
+F:\GIThub\HRMS\HRMS.Model\obj\Debug\net6.0\HRMS.Model.AssemblyInfoInputs.cache
+F:\GIThub\HRMS\HRMS.Model\obj\Debug\net6.0\HRMS.Model.AssemblyInfo.cs
+F:\GIThub\HRMS\HRMS.Model\obj\Debug\net6.0\HRMS.Model.csproj.CoreCompileInputs.cache
+F:\GIThub\HRMS\HRMS.Model\obj\Debug\net6.0\HRMS.Model.dll
+F:\GIThub\HRMS\HRMS.Model\obj\Debug\net6.0\refint\HRMS.Model.dll
+F:\GIThub\HRMS\HRMS.Model\obj\Debug\net6.0\HRMS.Model.pdb
+F:\GIThub\HRMS\HRMS.Model\obj\Debug\net6.0\ref\HRMS.Model.dll

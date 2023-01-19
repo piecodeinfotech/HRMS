@@ -1,0 +1,15 @@
+F:\GIThub\HRMS\HRMS.Logic\bin\Debug\net6.0\HRMS.Logic.deps.json
+F:\GIThub\HRMS\HRMS.Logic\bin\Debug\net6.0\HRMS.Logic.dll
+F:\GIThub\HRMS\HRMS.Logic\bin\Debug\net6.0\HRMS.Logic.pdb
+F:\GIThub\HRMS\HRMS.Logic\bin\Debug\net6.0\HRMS.Model.dll
+F:\GIThub\HRMS\HRMS.Logic\bin\Debug\net6.0\HRMS.Model.pdb
+F:\GIThub\HRMS\HRMS.Logic\obj\Debug\net6.0\HRMS.Logic.csproj.AssemblyReference.cache
+F:\GIThub\HRMS\HRMS.Logic\obj\Debug\net6.0\HRMS.Logic.GeneratedMSBuildEditorConfig.editorconfig
+F:\GIThub\HRMS\HRMS.Logic\obj\Debug\net6.0\HRMS.Logic.AssemblyInfoInputs.cache
+F:\GIThub\HRMS\HRMS.Logic\obj\Debug\net6.0\HRMS.Logic.AssemblyInfo.cs
+F:\GIThub\HRMS\HRMS.Logic\obj\Debug\net6.0\HRMS.Logic.csproj.CoreCompileInputs.cache
+F:\GIThub\HRMS\HRMS.Logic\obj\Debug\net6.0\HRMS.Logic.csproj.CopyComplete
+F:\GIThub\HRMS\HRMS.Logic\obj\Debug\net6.0\HRMS.Logic.dll
+F:\GIThub\HRMS\HRMS.Logic\obj\Debug\net6.0\refint\HRMS.Logic.dll
+F:\GIThub\HRMS\HRMS.Logic\obj\Debug\net6.0\HRMS.Logic.pdb
+F:\GIThub\HRMS\HRMS.Logic\obj\Debug\net6.0\ref\HRMS.Logic.dll
