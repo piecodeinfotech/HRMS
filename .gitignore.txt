@@ -1,0 +1,6 @@
+HRMS/bin
+HRMS/obj
+HRMS.Logic/bin
+HRMS.Logic/obj
+HRMS.Model/bin
+HRMS.Model/obj

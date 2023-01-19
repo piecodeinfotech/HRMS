@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMS", "HRMS\HRMS.csproj", "{DFA861E6-9370-4571-A53D-06D5D5A2F761}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRMS", "HRMS\HRMS.csproj", "{DFA861E6-9370-4571-A53D-06D5D5A2F761}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMS.Model", "HRMS.Model\HRMS.Model.csproj", "{149CDA90-0903-44C4-9303-A98BC0131BD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMS.Logic", "HRMS.Logic\HRMS.Logic.csproj", "{D3A4783D-40E7-4A14-8CC3-AC368F8FE743}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{DFA861E6-9370-4571-A53D-06D5D5A2F761}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFA861E6-9370-4571-A53D-06D5D5A2F761}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFA861E6-9370-4571-A53D-06D5D5A2F761}.Release|Any CPU.Build.0 = Release|Any CPU
+		{149CDA90-0903-44C4-9303-A98BC0131BD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{149CDA90-0903-44C4-9303-A98BC0131BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{149CDA90-0903-44C4-9303-A98BC0131BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{149CDA90-0903-44C4-9303-A98BC0131BD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3A4783D-40E7-4A14-8CC3-AC368F8FE743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A4783D-40E7-4A14-8CC3-AC368F8FE743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3A4783D-40E7-4A14-8CC3-AC368F8FE743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3A4783D-40E7-4A14-8CC3-AC368F8FE743}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
