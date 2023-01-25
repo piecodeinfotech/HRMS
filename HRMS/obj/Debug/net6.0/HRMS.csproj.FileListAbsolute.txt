@@ -25,13 +25,6 @@ F:\HRMS\HRMS\HRMS\obj\Debug\net6.0\refint\HRMS.dll
 F:\HRMS\HRMS\HRMS\obj\Debug\net6.0\HRMS.pdb
 F:\HRMS\HRMS\HRMS\obj\Debug\net6.0\HRMS.genruntimeconfig.cache
 F:\HRMS\HRMS\HRMS\obj\Debug\net6.0\ref\HRMS.dll
-F:\GIThub\HRMS\HRMS\obj\Debug\net6.0\HRMS.csproj.AssemblyReference.cache
-F:\GIThub\HRMS\HRMS\obj\Debug\net6.0\HRMS.GeneratedMSBuildEditorConfig.editorconfig
-F:\GIThub\HRMS\HRMS\obj\Debug\net6.0\HRMS.AssemblyInfoInputs.cache
-F:\GIThub\HRMS\HRMS\obj\Debug\net6.0\HRMS.AssemblyInfo.cs
-F:\GIThub\HRMS\HRMS\obj\Debug\net6.0\HRMS.csproj.CoreCompileInputs.cache
-F:\GIThub\HRMS\HRMS\obj\Debug\net6.0\HRMS.MvcApplicationPartsAssemblyInfo.cs
-F:\GIThub\HRMS\HRMS\obj\Debug\net6.0\HRMS.MvcApplicationPartsAssemblyInfo.cache
 F:\GIThub\HRMS\HRMS\bin\Debug\net6.0\appsettings.Development.json
 F:\GIThub\HRMS\HRMS\bin\Debug\net6.0\appsettings.json
 F:\GIThub\HRMS\HRMS\bin\Debug\net6.0\HRMS.exe
@@ -43,6 +36,7 @@ F:\GIThub\HRMS\HRMS\bin\Debug\net6.0\AutoMapper.dll
 F:\GIThub\HRMS\HRMS\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 F:\GIThub\HRMS\HRMS\bin\Debug\net6.0\Azure.Core.dll
 F:\GIThub\HRMS\HRMS\bin\Debug\net6.0\Azure.Identity.dll
+F:\GIThub\HRMS\HRMS\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 F:\GIThub\HRMS\HRMS\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 F:\GIThub\HRMS\HRMS\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 F:\GIThub\HRMS\HRMS\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
@@ -96,6 +90,13 @@ F:\GIThub\HRMS\HRMS\bin\Debug\net6.0\HRMS.Logic.dll
 F:\GIThub\HRMS\HRMS\bin\Debug\net6.0\HRMS.Model.dll
 F:\GIThub\HRMS\HRMS\bin\Debug\net6.0\HRMS.Logic.pdb
 F:\GIThub\HRMS\HRMS\bin\Debug\net6.0\HRMS.Model.pdb
+F:\GIThub\HRMS\HRMS\obj\Debug\net6.0\HRMS.csproj.AssemblyReference.cache
+F:\GIThub\HRMS\HRMS\obj\Debug\net6.0\HRMS.GeneratedMSBuildEditorConfig.editorconfig
+F:\GIThub\HRMS\HRMS\obj\Debug\net6.0\HRMS.AssemblyInfoInputs.cache
+F:\GIThub\HRMS\HRMS\obj\Debug\net6.0\HRMS.AssemblyInfo.cs
+F:\GIThub\HRMS\HRMS\obj\Debug\net6.0\HRMS.csproj.CoreCompileInputs.cache
+F:\GIThub\HRMS\HRMS\obj\Debug\net6.0\HRMS.MvcApplicationPartsAssemblyInfo.cs
+F:\GIThub\HRMS\HRMS\obj\Debug\net6.0\HRMS.MvcApplicationPartsAssemblyInfo.cache
 F:\GIThub\HRMS\HRMS\obj\Debug\net6.0\staticwebassets.build.json
 F:\GIThub\HRMS\HRMS\obj\Debug\net6.0\staticwebassets.development.json
 F:\GIThub\HRMS\HRMS\obj\Debug\net6.0\scopedcss\bundle\HRMS.styles.css

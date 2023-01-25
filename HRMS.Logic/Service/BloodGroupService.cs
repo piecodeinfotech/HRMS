@@ -3,6 +3,7 @@ using HRMS.Logic.Database;
 using HRMS.Logic.Database.Entities;
 using HRMS.Logic.Interface;
 using HRMS.Model;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace HRMS.Logic.Service
     {
         private readonly IMapper _mapper;
         HRMSContext _hRMSContext;
-        public BloodGroupService(HRMSContext hRMSContext, IMapper mapper  )
+        public BloodGroupService(HRMSContext hRMSContext, IMapper mapper)
         {
             _hRMSContext = hRMSContext;
             _mapper = mapper;
@@ -32,10 +33,10 @@ namespace HRMS.Logic.Service
             catch (Exception ex)
             {
 
-                throw;
+                throw; 
             }
 
-          
+
         }
 
         public void BloodDelete(int id)
@@ -49,49 +50,68 @@ namespace HRMS.Logic.Service
                     _hRMSContext.BloodGroup.Remove(data);
                     _hRMSContext.SaveChanges();
                 }
+                else
+                {
+                    throw new Exception("Record Not Found");
+                }
+               
+                    
             }
             catch (Exception ex)
             {
 
                 throw;
             }
-           
+
         }
 
         public BloodGroupVM BloodGroupById(int BloodGroupId)
         {
             try
             {
-                return _mapper.Map<BloodGroupVM>(_hRMSContext.BloodGroup.Where(x => x.Id == BloodGroupId).FirstOrDefault());
+                var data = _mapper.Map<BloodGroupVM>(_hRMSContext.BloodGroup.Where(x => x.Id == BloodGroupId).FirstOrDefault());
+                if (data == null)
+                {
+                    throw new Exception("Invalid Id");
+                }
+                return data;
             }
             catch (Exception ex)
             {
-
                 throw;
             }
-           
+             
+
         }
 
         public void BloodUpdate(BloodGroupVM obj)
         {
             try
             {
-                BloodGroup blood = new BloodGroup();
+             //   BloodGroup blood = new BloodGroup();
 
-                blood = _hRMSContext.BloodGroup.Where(x => x.Id == obj.Id).FirstOrDefault();
 
-                if (blood != null)
+                var bloodGroup = _mapper.Map<BloodGroup>(obj);
+                var record =  _hRMSContext.BloodGroup.Where(x => x.Id == obj.Id).AsNoTracking().FirstOrDefault();
+                if(record != null)
                 {
-                    _mapper.Map<BloodGroup>(obj);
+                    _hRMSContext.BloodGroup.Update(bloodGroup);
+                    _hRMSContext.SaveChanges();
+
                 }
+                else
+                {
+                    throw new Exception("Reocord Not Update");
+                }
+
             }
             catch (Exception ex)
             {
 
                 throw;
             }
-           
-           
+
+
         }
 
         public List<BloodGroupVM> GetBloodGroups()
