@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HRMS.Model
 {
-    public class EducQualifiAttachVM
+    public class tblEducQualifiAttachVM
     {
         public int Id { get; set; }
         public int Educational_Qualification_Id { get; set; }

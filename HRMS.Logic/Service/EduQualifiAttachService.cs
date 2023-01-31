@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace HRMS.Logic.Service
 {
-    public class EduQualifiAttachService :IEduQualifiAttach
+    public class EduQualifiAttachService :ItblEduQualifiAttach
 
     {
         HRMSContext _hRMSContext;
@@ -47,16 +47,16 @@ namespace HRMS.Logic.Service
             }
         }
 
-        public List<EducQualifiAttachVM> EduQualifiAttachList()
+        public List<tblEducQualifiAttachVM> EduQualifiAttachList()
         {
-            return _mapper.Map<List<EducQualifiAttachVM>>(_hRMSContext.EduQualifiAttach.ToList());
+            return _mapper.Map<List<tblEducQualifiAttachVM>>(_hRMSContext.EduQualifiAttach.ToList());
         }
 
-        public EducQualifiAttachVM GetEduQualifiAttachByid(int id)
+        public tblEducQualifiAttachVM GetEduQualifiAttachByid(int id)
         {
             try
             {
-                var data = _mapper.Map<EducQualifiAttachVM>(_hRMSContext.EduQualifiAttach.Where(x => x.Id == id).FirstOrDefault());
+                var data = _mapper.Map<tblEducQualifiAttachVM>(_hRMSContext.EduQualifiAttach.Where(x => x.Id == id).FirstOrDefault());
 
                 if (data == null)
                 {
@@ -71,11 +71,11 @@ namespace HRMS.Logic.Service
             }
         }
 
-        public void SaveEduQualifiAttach(EducQualifiAttachVM obj)
+        public void SaveEduQualifiAttach(tblEducQualifiAttachVM obj)
         {
             try
             {
-                var educQualifi = _mapper.Map<EducQualifiAttach>(obj);
+                var educQualifi = _mapper.Map<tblEducQualifiAttach>(obj);
                 _hRMSContext.EduQualifiAttach.Add(educQualifi);
                 _hRMSContext.SaveChanges();
 
@@ -87,11 +87,11 @@ namespace HRMS.Logic.Service
             }
         }
 
-        public void UpdateEduQualifiAttach(EducQualifiAttachVM obj)
+        public void UpdateEduQualifiAttach(tblEducQualifiAttachVM obj)
         {
             try
             {
-                var update = _mapper.Map<EducQualifiAttach>(obj);
+                var update = _mapper.Map<tblEducQualifiAttach>(obj);
                 var record = _hRMSContext.EduQualifiAttach.Where(x => x.Id == obj.Id).AsNoTracking().FirstOrDefault();
                 if (record != null)
                 {

@@ -4,6 +4,7 @@ using HRMS.Logic.Database;
 using HRMS.Logic.Database.Entities;
 using HRMS.Logic.Interface;
 using HRMS.Logic.Service;
+using HRMS.Model;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -89,40 +90,28 @@ builder.Services.AddScoped<IThirdPartyType, ThirdPartyTypeService>();
 builder.Services.AddScoped<IUserType, UserTypeService>();
 builder.Services.AddScoped<IWorkingStatus, WorkingStatusService>();
 builder.Services.AddScoped<ICorresspondanceContInfo, CorresspondanceContInfoService>();
-builder.Services.AddScoped<IEduQualifiAttach, EduQualifiAttachService>();
-
+builder.Services.AddScoped<ItblEduQualifiAttach, EduQualifiAttachService>();
 builder.Services.AddScoped<IEmployeeMaster, EmployeeMastersService>();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+builder.Services.AddScoped<ItblHigherAuthorityBranch, tblHigherAuthBranchService>();
+builder.Services.AddScoped<Itbl_HighestQualification, tblHighestQualificationService>();
+builder.Services.AddScoped<ItblhrEmpActivationOTPdetails, tblhrEmpActivationotpdetailsService>();
+builder.Services.AddScoped<ItblhrEmployeeDetails, EmpDetailsService>();
+builder.Services.AddScoped<ItblhrEmployeeEducationDetails, tblhrEmpEduDetailsService>();
+builder.Services.AddScoped<IEmployeeEducations, tblhrEmployeeEducationsService>();
+builder.Services.AddScoped<ItblhrEmpExperienceDetails, EmpExperienceDetailsService>();
+builder.Services.AddScoped<IEmpFamilydetails, EmpFamilyDetailsService>();
+builder.Services.AddScoped<IEmpIdProofDetails, tblhrEmpIdproofDetailsService>();
+builder.Services.AddScoped<IEmpNomineeDetails, tblhrEmpNomineeDetailsService>();
+builder.Services.AddScoped<ILoginUsers, LoginUsersService>();
+builder.Services.AddScoped<IIdentityProof, IdentityProofService>();
+builder.Services.AddScoped<IIdentityProofAttach, IdentityProofAttachService>();
+builder.Services.AddScoped<IIdentityType, tblIdentityTypeService>();
+builder.Services.AddScoped<ItblMaritalStatus, MaritalStatusService>();
+builder.Services.AddScoped<IOtherInformation, OtherInformationService>();
+builder.Services.AddScoped<IPermanentContInfo, PermanentContInfoService>();
+builder.Services.AddScoped<ItblProfesInfoAttach, ProfesInfoAttachService>();
+builder.Services.AddScoped<ItblProfessionalInformation, tblProfInfoService>();
+builder.Services.AddScoped<ItbluserType, tblUserTypeService>();
 
 builder.Services.AddDbContext<HRMSContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectDb")));

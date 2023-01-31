@@ -6,24 +6,15 @@ using System.Threading.Tasks;
 
 namespace HRMS.Model
 {
-    public class CorresspondanceContInfoVM
+    public class tblIdentityProofAttachVM
     {
         public int Id { get; set; }
-        public string? Address { get; set; }
-        public string? Address1 { get; set; }
-
-        public int Country { get; set; }
-        public int Zone { get; set; }
-
-        public int State { get; set; }
-        public string? City { get; set; }
-        public string? Pin { get; set; }
-
-        public int Employee_Id { get; set; }
-        public string? MobileNo2 { get; set; }
-        public string? Phone { get; set; }
-        public string? EmailAddress2 { get; set; }
-
+        public int? Identity_Proof_Id { get; set; }
+        public int? EmployeeId { get; set; }
+        public string? IdentityType { get; set; }
+        public string? EmployeeName { get; set; }
+        public string? DocumentType { get; set; }
+        public string? DocumentUrl { get; set; }
         public DateTime? CreatedOn_Date { get; set; }
         public int? CreatedBy_Login_User_Id { get; set; }
         public int? CreatedBy_Login_Session_Id { get; set; }
@@ -34,18 +25,10 @@ namespace HRMS.Model
         public int? UpdatedBy_Login_User_Id { get; set; }
         public int? UpdatedBy_Login_Session_Id { get; set; }
         public string? UpdatedFrom_Page { get; set; }
-
         public int? UpdatedFrom_Sub_Menu_Id { get; set; }
         public string? UpdatedFrom_API_Name { get; set; }
-
-
     }
 }
-
-
-
-
-
 
 
 

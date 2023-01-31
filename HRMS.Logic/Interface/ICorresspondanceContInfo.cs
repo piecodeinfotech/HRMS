@@ -11,10 +11,10 @@ namespace HRMS.Logic.Interface
 {
     public interface ICorresspondanceContInfo
     {
-        void SaveCorreContInfo(CorresspondanceContInfoVM obj);
-        void UpdateCorreContInfo(CorresspondanceContInfoVM obj);
+        void SaveCorreContInfo(tblCorresspondanceContInfoVM obj);
+        void UpdateCorreContInfo(tblCorresspondanceContInfoVM obj);
         void DeleteCorreContInfo(int id);
-        CorresspondanceContInfoVM GetCorreContInfoByid(int id);
-        List<CorresspondanceContInfoVM> CorreContInfoList();
+        tblCorresspondanceContInfoVM GetCorreContInfoByid(int id);
+        List<tblCorresspondanceContInfoVM> CorreContInfoList();
     }
 }

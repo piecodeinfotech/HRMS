@@ -89,7 +89,7 @@ namespace HRMS.Logic.Service
             try
             {
                 var update = _mapper.Map<WorkingStatus>(obj);
-                var record = _hRMSContext.UserType.Where(x => x.Id == obj.Id).AsNoTracking().FirstOrDefault();
+                var record = _hRMSContext.WorkingStatus.Where(x => x.Id == obj.Id).AsNoTracking().FirstOrDefault();
                 if (record != null)
                 {
                     _hRMSContext.WorkingStatus.Update(update);

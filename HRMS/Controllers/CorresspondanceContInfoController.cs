@@ -16,12 +16,14 @@ namespace HRMS.Controllers
         {
             _corresspondanceContInfo = corresspondanceContInfo; 
         }
-        #region  WorkingStatus API
-        Result<CorresspondanceContInfoVM> _Result = new Result<CorresspondanceContInfoVM>();
+        #region  CorresspondanceContInfo API
+
+        Result<tblCorresspondanceContInfoVM> _Result = new Result<tblCorresspondanceContInfoVM>();
+
         [HttpGet]
         public IActionResult GetCorrContInfo()
         {
-            Result<List<CorresspondanceContInfoVM>> _Result = new Result<List<CorresspondanceContInfoVM>>();
+            Result<List<tblCorresspondanceContInfoVM>> _Result = new Result<List<tblCorresspondanceContInfoVM>>();
 
             try
             {
@@ -53,7 +55,7 @@ namespace HRMS.Controllers
 
         }
         [HttpPost]
-        public IActionResult SaveCorrContInfo(CorresspondanceContInfoVM obj)
+        public IActionResult SaveCorrContInfo(tblCorresspondanceContInfoVM obj)
         {
             try
             {
@@ -68,7 +70,7 @@ namespace HRMS.Controllers
             return Ok(_Result);
         }
         [HttpPut]
-        public IActionResult UpdateCorrContInfo(CorresspondanceContInfoVM obj)
+        public IActionResult UpdateCorrContInfo(tblCorresspondanceContInfoVM obj)
         {
             try
             {

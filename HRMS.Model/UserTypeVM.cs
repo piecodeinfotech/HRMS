@@ -20,7 +20,6 @@ namespace HRMS.Model
         public int? UpdatedBy_Login_User_Id { get; set; }
         public int? UpdatedBy_Login_Session_Id { get; set; }
         public string? UpdatedFrom_Page { get; set; }
-
         public int? UpdatedFrom_Sub_Menu_Id { get; set; }
         public string? UpdatedFrom_API_Name { get; set; }
 

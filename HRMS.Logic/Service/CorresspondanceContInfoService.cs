@@ -19,13 +19,15 @@ namespace HRMS.Logic.Service
         IMapper _mapper;
         public CorresspondanceContInfoService(HRMSContext hRMSContext, IMapper mapper)
         {
-            HRMSContext _hRMSContext;
-            IMapper _mapper;
+            _hRMSContext = hRMSContext;
+            _mapper = mapper;
         }
 
-        public List<CorresspondanceContInfoVM> CorreContInfoList()
+
+        public List<tblCorresspondanceContInfoVM> CorreContInfoList()
         {
-            return _mapper.Map<List<CorresspondanceContInfoVM>>(_hRMSContext.CorresspondanceContInfo.ToList());
+
+            return _mapper.Map<List<tblCorresspondanceContInfoVM>>(_hRMSContext.CorresspondanceContInfo.ToList());
         }
 
         public void DeleteCorreContInfo(int id)
@@ -52,11 +54,11 @@ namespace HRMS.Logic.Service
             }
         }
 
-        public CorresspondanceContInfoVM GetCorreContInfoByid(int id)
+        public tblCorresspondanceContInfoVM GetCorreContInfoByid(int id)
         {
             try
             {
-                var data = _mapper.Map<CorresspondanceContInfoVM>(_hRMSContext.CorresspondanceContInfo.Where(x => x.Id == id).FirstOrDefault());
+                var data = _mapper.Map<tblCorresspondanceContInfoVM>(_hRMSContext.CorresspondanceContInfo.Where(x => x.Id == id).FirstOrDefault());
 
                 if (data == null)
                 {
@@ -70,11 +72,11 @@ namespace HRMS.Logic.Service
                 throw;
             }
         }
-        public void SaveCorreContInfo(CorresspondanceContInfoVM obj)
+        public void SaveCorreContInfo(tblCorresspondanceContInfoVM obj)
         {
             try
             {
-                var corresspondance = _mapper.Map<CorresspondanceContInfo>(obj);
+                var corresspondance = _mapper.Map<tblCorresspondanceContInfo>(obj);
                 _hRMSContext.CorresspondanceContInfo.Add(corresspondance);
                 _hRMSContext.SaveChanges();
 
@@ -85,11 +87,11 @@ namespace HRMS.Logic.Service
                 throw;
             }
         }
-        public void UpdateCorreContInfo(CorresspondanceContInfoVM obj)
+        public void UpdateCorreContInfo(tblCorresspondanceContInfoVM obj)
         {
             try
             {
-                var update = _mapper.Map<CorresspondanceContInfo>(obj);
+                var update = _mapper.Map<tblCorresspondanceContInfo>(obj);
                 var record = _hRMSContext.CorresspondanceContInfo.Where(x => x.Id == obj.Id).AsNoTracking().FirstOrDefault();
                 if (record != null)
                 {
@@ -108,8 +110,6 @@ namespace HRMS.Logic.Service
 
                 throw;
             }
-
-
 
         }
 

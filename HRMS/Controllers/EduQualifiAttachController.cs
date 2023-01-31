@@ -11,17 +11,17 @@ namespace HRMS.Controllers
     [ApiController]
     public class EduQualifiAttachController : ControllerBase
     {
-        IEduQualifiAttach _eduQualifiAttach;
-        public EduQualifiAttachController(IEduQualifiAttach eduQualifiAttach)
+        ItblEduQualifiAttach _eduQualifiAttach;
+        public EduQualifiAttachController(ItblEduQualifiAttach eduQualifiAttach)
         {
             _eduQualifiAttach = eduQualifiAttach;   
         }
         #region  EducQualifiAttach API
-        Result<EducQualifiAttachVM> _Result = new Result<EducQualifiAttachVM>();
+        Result<tblEducQualifiAttachVM> _Result = new Result<tblEducQualifiAttachVM>();
         [HttpGet]
         public IActionResult GetEduQualiAttach()
         {
-            Result<List<EducQualifiAttachVM>> _Result = new Result<List<EducQualifiAttachVM>>();
+            Result<List<tblEducQualifiAttachVM>> _Result = new Result<List<tblEducQualifiAttachVM>>();
 
             try
             {
@@ -53,7 +53,7 @@ namespace HRMS.Controllers
 
         }
         [HttpPost]
-        public IActionResult SaveEduQualiAttach(EducQualifiAttachVM obj)
+        public IActionResult SaveEduQualiAttach(tblEducQualifiAttachVM obj)
         {
             try
             {
@@ -68,7 +68,7 @@ namespace HRMS.Controllers
             return Ok(_Result);
         }
         [HttpPut]
-        public IActionResult UpdateEduQualiAttach(EducQualifiAttachVM obj)
+        public IActionResult UpdateEduQualiAttach(tblEducQualifiAttachVM obj)
         {
             try
             {

@@ -13,7 +13,6 @@ namespace HRMS.Logic.Database.Entities
     {
         [Key]
         public int Id { get; set; }
-        public int MyProperty { get; set; }
         public string? WorkingStatus_Name { get; set; }
         public DateTime? CreatedOn_Date { get; set; }
         public int? CreatedBy_Login_User_Id { get; set; }

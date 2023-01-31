@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace HRMS.Logic.Database.Entities
 {
     [Table("tbl_Educational_Qualification_Attachements")]
-    public class EducQualifiAttach
+    public class tblEducQualifiAttach
     {
         [Key]
         public int Id { get; set; }

@@ -16,15 +16,15 @@ namespace HRMS.Logic.Service
     {
         HRMSContext _hRMSContext;
         IMapper _mapper;
-        public DepartmentService(HRMSContext hRMSContext,IMapper mapper)
+        public DepartmentService(HRMSContext hRMSContext, IMapper mapper)
         {
             _hRMSContext = hRMSContext;
-            _mapper = mapper;   
+            _mapper = mapper;
 
         }
 
         #region
-       
+
 
         public void DeleteDeapartment(int id)
         {
@@ -67,10 +67,10 @@ namespace HRMS.Logic.Service
 
         public DepartmentVM GetDeapartmentByid(int id)
 
+        {
+            try
             {
-                try
-                {
-                    var data= _mapper.Map<DepartmentVM>(_hRMSContext.Department.Where(x => x.Id == id).FirstOrDefault());
+                var data = _mapper.Map<DepartmentVM>(_hRMSContext.Department.Where(x => x.Id == id).FirstOrDefault());
                 if (data == null)
                 {
                     throw new Exception("Invalid Id");
@@ -78,11 +78,11 @@ namespace HRMS.Logic.Service
                 return data;
             }
 
-                catch (Exception ex)
-                {
+            catch (Exception ex)
+            {
 
-                    throw;
-                }
+                throw;
+            }
         }
 
         public void SaveDeapartment(DepartmentVM obj)
