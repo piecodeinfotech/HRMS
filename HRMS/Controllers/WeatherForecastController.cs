@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HRMS.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase

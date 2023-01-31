@@ -2,12 +2,14 @@
 using HRMS.Logic.Database.Entities;
 using HRMS.Logic.Interface;
 using HRMS.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Query.Internal;
 
 namespace HRMS.Controllers
 {
+    [Authorize]
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class IdentityProofAttachController : ControllerBase

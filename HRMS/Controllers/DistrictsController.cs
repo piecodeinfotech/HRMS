@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HRMS.Controllers
 {
-
+    [Authorize]
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class DistrictsController : ControllerBase

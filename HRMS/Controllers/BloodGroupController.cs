@@ -10,7 +10,9 @@ using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace HRMS.Controllers
 {
-   
+
+    
+    [Authorize]
     [ApiController]
     [Route("api/[controller]/[action]")]
     public class BloodGroupController : ControllerBase

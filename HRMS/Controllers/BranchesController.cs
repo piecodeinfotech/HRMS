@@ -9,6 +9,7 @@ using System.Runtime.CompilerServices;
 
 namespace HRMS.Controllers
 {
+    [Authorize]
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class BranchesController : ControllerBase
